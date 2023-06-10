@@ -6,10 +6,16 @@
 
 <meta charset="UTF-8">
 
-<title>Testing Conditionals(:Get tea for your cat)</title>
+<title>"""
+Testing Conditionals and Interface
+(or, Get Tea for Your Cat)
+"""</title>
 
 <script type="text/bitsyGameData" id="exportedGameData">
-Testing Conditionals(:Get tea for your cat)
+"""
+Testing Conditionals and Interface
+(or, Get Tea for Your Cat)
+"""
 
 # BITSY VERSION 8.4
 
@@ -39,12 +45,13 @@ ROOM 0
 0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
 0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
 0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
-0,a,0,0,0,0,0,0,0,0,0,0,0,0,a,0
+0,a,0,0,0,0,0,0,0,0,0,0,0,k,a,0
 0,a,a,a,a,a,a,a,a,a,a,a,a,a,a,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME testing room
 ITM 0 10,7
 ITM 1 4,7
+END 7 13,13
 PAL 0
 TUNE 2
 
@@ -145,6 +152,26 @@ TIL j
 00011000
 NAME "0" block
 
+TIL k
+01100110
+10111101
+11000011
+01011010
+01011010
+11000011
+10111101
+01100110
+>
+00000000
+00111100
+01000010
+01011010
+01011010
+01000010
+00111100
+00000000
+NAME other ending
+
 SPR A
 00011000
 00011000
@@ -236,12 +263,15 @@ POS 1 4,11
 SPR g
 00000000
 00000000
-00000000
-00000000
-00000000
-00000000
-00000000
-00000000
+00111110
+00111110
+00111110
+00001000
+00001000
+00001000
+NAME sign
+DLG 8
+POS 0 12,13
 
 SPR h
 00000000
@@ -318,6 +348,14 @@ NAME 10 tea sprite dialog
 DLG 6
 You dispense a single tea.{exit "0" 7 5}{ava "A"}{item "0" {{item "0"} + 1}}
 NAME 1 tea sprite dialog
+
+DLG 7
+The end
+NAME ending 1
+
+DLG 8
+To the right of this sign as an ending.
+NAME sign dialog
 
 VAR a
 42
@@ -12103,6 +12141,7 @@ CHAR 9835
 011011
 011000
 000000
+</script>
 </script>
 
 </head>
